@@ -1,0 +1,52 @@
+$mainColor: #092483;
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+
+.head-dummy{
+    // size : auto * 4%
+    height: 4%;
+}
+
+.head-container{
+    // Link
+    a{
+        color: $mainColor;
+        text-decoration: none;
+    }
+
+    // size : total 70% * 6%
+    width: 70%;
+    height: 6%;
+    margin: 0 auto;
+
+    // flex
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        // font
+        font-size: 1rem;
+        color: $mainColor;
+
+        // bold when hover w/o moving
+        &:hover{
+            text-shadow: 0 0.015em #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
+        }
+    }
+
+    .head-nav{
+        // flex
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            // margin
+            margin-left: 2rem;
+        }
+    }
+}

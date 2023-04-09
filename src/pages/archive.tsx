@@ -1,8 +1,9 @@
 import * as React from 'react'
 import Header from '../components/Layout/Header'
+import { StaticImage } from 'gatsby-plugin-image'
 import Footer from '../components/Layout/Footer'
 
-const IndexPage = () => {
+const ArchivePage = () => {
   return (
     <>
       <Header></Header>
@@ -14,4 +15,4 @@ const IndexPage = () => {
 
 export const Head = () => <title>Home Page</title>
 
-export default IndexPage
+export default ArchivePage
