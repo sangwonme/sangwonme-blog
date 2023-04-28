@@ -1,13 +1,8 @@
-$mainColor: #092483;
-
-@function toRem($value) {
-    $remValue: ($value / 16) + rem; 
-    @return $remValue;
-}
+@import "../global.scss";
 
 .head-dummy{
     // size : auto * 4%
-    height: 4%;
+    height: $headDummyH;
 }
 
 .head-container{
@@ -17,9 +12,9 @@ $mainColor: #092483;
         text-decoration: none;
     }
 
-    // size : total 70% * 6%
-    width: 70%;
-    height: 6%;
+    // size : total 70% * 5%
+    width: $deskW;
+    height: $headH;
     margin: 0 auto;
 
     // flex
@@ -29,7 +24,7 @@ $mainColor: #092483;
 
     p{
         // font
-        font-size: 1rem;
+        font-size: $mainFontSize;
         color: $mainColor;
 
         // bold when hover w/o moving

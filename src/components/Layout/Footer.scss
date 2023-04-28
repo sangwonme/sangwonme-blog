@@ -1,3 +1,5 @@
+@import "../global.scss";
+
 html, body{
     top: 0;
     margin: 0;
@@ -14,20 +16,22 @@ html, body{
 
 main{
     // size
-    width: 70%;
-    min-height: 80%;
+    width: $deskW;
+    min-height: $mainH;
     margin: 0 auto;
 }
 
 .foot-container{
     // size
-    width: 70%;
-    height: 10%;
+    width: $deskW;
+    height: $footH;
     margin: 0 auto;
     
     // text
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #09238339;
+    color: $darkColor;
+    font-size: $mainFontSize;
+
 }
