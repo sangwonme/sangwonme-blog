@@ -1,13 +1,62 @@
 @import '../global.scss';
 
+b{
+    font-family: $bold;
+}
+
 .aboutme-container{
-    // debug
-    background-color: yellow;
+    // background
+    background-image: url('../../images/gridbg.png');
+    background-size: contain;
 
     // size
     width: 100%;
     height: toRem(400);
 
-    // flex
-    display: flex;
+    // font
+    color: $mainColor;
+
+    .aboutme-wrapper{
+        // size
+        width: $deskW;
+        height: 100%;
+
+        // center
+        margin: 0 auto;
+
+        // flex
+        display: flex;
+        align-items: center;
+        
+        .aboutme-text{
+            // size
+            width: 50%;
+
+            .aboutme-name{
+                // font
+                font-family: $bold;
+                font-size: 2.2rem;
+
+                // margin
+                margin: 0;
+            }
+
+            .aboutme-description{
+                // font
+                font-family: $light;
+
+                // margin
+                margin: toRem(10) 0;
+                word-break: keep-all;
+                word-wrap: break-word;
+
+            }
+        }
+
+        .aboutme-figure{
+            // size
+            width: 50%;
+
+        }
+    }
 }

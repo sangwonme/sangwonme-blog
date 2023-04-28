@@ -5,7 +5,16 @@ $darkColor: #09238339;
 
 // font
 $mainFontSize: 0.85rem;
+$light: 'GmarketSansLight';
+$medium: 'GmarketSansMedium';
+$bold: 'GmarketSansBold';
 
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -36,7 +45,7 @@ html, body{
     top: 0;
     margin: 0;
     height: 100%;
-    font-family: 'GmarketSansMedium';
+    font-family: $medium;
 }
 
 #___gatsby{
@@ -49,7 +58,7 @@ html, body{
 
 main{
     // size
-    width: $deskW;
+    width: 100%;
     height: $mainH;
     min-height: $mainH;
     margin: 0 auto;
