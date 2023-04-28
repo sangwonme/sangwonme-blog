@@ -1,0 +1,16 @@
+@import '../global.scss';
+
+.section-title{
+    // size
+    width: fit-content;
+    padding: toRem(8) 0 ;
+
+    // font
+    font-size: $mainFontSize;
+    font-family: 'GmarketSansBold';
+    color: $mainColor;
+
+    // line
+    border-top: 3px solid $mainColor;
+    border-bottom: 3px solid $mainColor;
+}

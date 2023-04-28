@@ -1,19 +1,56 @@
+
 // color
 $mainColor: #092483;
 $darkColor: #09238339;
 
 // font
-$mainFontSize: 0.9rem;
+$mainFontSize: 0.85rem;
 
-// layout
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// layout size
 $headDummyH: 2%;
 $headH: 5%;
 $mainH: 88%;
 $footH: 5%;
-
 $deskW: 70%;
 
 @function toRem($value) {
     $remValue: ($value / 16) + rem; 
     @return $remValue;
+}
+
+// global style
+html, body{
+    top: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'GmarketSansMedium';
+}
+
+#___gatsby{
+    height: 100%;
+}
+
+#gatsby-focus-wrapper{
+    height: 100%;
+}
+
+main{
+    // size
+    width: $deskW;
+    height: $mainH;
+    min-height: $mainH;
+    margin: 0 auto;
 }

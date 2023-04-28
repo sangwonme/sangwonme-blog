@@ -1,0 +1,13 @@
+@import '../global.scss';
+
+.aboutme-container{
+    // debug
+    background-color: yellow;
+
+    // size
+    width: 100%;
+    height: toRem(400);
+
+    // flex
+    display: flex;
+}
