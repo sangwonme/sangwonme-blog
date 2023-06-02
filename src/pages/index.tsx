@@ -10,7 +10,8 @@ const IndexPage = () => {
       <Header></Header>
       <main>
         <AboutMe></AboutMe>
-        <SectionTitle>My Works</SectionTitle>
+        <SectionTitle>Current Works</SectionTitle>
+        <SectionTitle>Publications</SectionTitle>
       </main>
       <Footer></Footer>
     </>

@@ -27,6 +27,7 @@ b{
         // flex
         display: flex;
         align-items: center;
+        justify-content: space-between;
         
         .aboutme-text{
             // size
@@ -35,8 +36,10 @@ b{
             .aboutme-name{
                 // font
                 font-family: $bold;
-                font-size: 2.2rem;
-
+                font-size: 3.2rem;
+                line-height: 110%;
+                color: white;
+                opacity: 1;
                 // margin
                 margin: 0;
             }
@@ -45,6 +48,7 @@ b{
                 // font
                 font-size: $mainFontSize;
                 font-family: $light;
+                color: white;
 
                 // margin
                 margin: toRem(10) 0;
@@ -52,12 +56,43 @@ b{
                 word-wrap: break-word;
 
             }
+
+            .aboutme-icon-wrapper{
+                img{
+                    // size
+                    width: 2 * $mainFontSize;
+
+                    // margin
+                    margin-right: toRem(10);
+
+                    // color
+                    transform: rotate(0);
+                    transition: all 0.8s;
+                    &:hover{
+                        transform: rotate(1turn);
+                    }
+                }
+
+                .aboutme-icon-mail{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
         }
 
         .aboutme-figure{
             // size
             width: 50%;
 
+            // flex -> align video to right
+            display: flex;
+            justify-content: end;
+
+            video{
+                // size
+                width: 80%;
+            }
         }
     }
 }
