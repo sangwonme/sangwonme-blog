@@ -2,7 +2,7 @@ import * as React from 'react'
 import Header from '../components/Layout/Header'
 import Footer from '../components/Layout/Footer'
 import AboutMe from '../components/HomePageRelated/AboutMe'
-import SectionTitle from '../components/Common/SectionTitle'
+import DividerTitle from '../components/Common/DividerTitle'
 
 const IndexPage = () => {
   return (
@@ -10,8 +10,8 @@ const IndexPage = () => {
       <Header></Header>
       <main>
         <AboutMe></AboutMe>
-        <SectionTitle>Current Works</SectionTitle>
-        <SectionTitle>Publications</SectionTitle>
+        <DividerTitle>Current Works</DividerTitle>
+        <DividerTitle>Publications</DividerTitle>
       </main>
       <Footer></Footer>
     </>

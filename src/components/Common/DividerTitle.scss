@@ -1,0 +1,55 @@
+@import '../global.scss';
+
+.divider-wrapper{
+    // size
+    width: $deskW;
+
+    // center
+    margin: 0 auto;
+
+    // position
+    position: relative;
+
+    // flex
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // dividerline
+    &::after {
+        content: "";
+        // position
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        // draw line
+        height: 2px;  
+        background-color: $mainColor;  
+        z-index: -1;
+    }
+
+    .divider-circle{
+        // size
+        width: toRem(10);
+        height: toRem(10);
+        
+        // color
+        border-radius: 50%;
+        border: $mainColor 2px solid;
+        background-color: white;
+    }
+
+    .divider-title{
+        // font
+        font-size: $mainFontSize;
+        font-family: 'GmarketSansBold';
+        color: $mainColor;
+
+        // background
+        background-color: white;
+        padding: 0 10px;
+    }
+
+}
