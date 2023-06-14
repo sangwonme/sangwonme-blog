@@ -10,8 +10,8 @@ const IndexPage = () => {
       <Header></Header>
       <main>
         <AboutMe></AboutMe>
-        <DividerTitle>Current Works</DividerTitle>
         <DividerTitle>Publications</DividerTitle>
+        <DividerTitle>Education</DividerTitle>
       </main>
       <Footer></Footer>
     </>
