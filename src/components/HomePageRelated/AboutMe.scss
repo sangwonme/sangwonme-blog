@@ -37,7 +37,7 @@ b{
                 // font
                 font-family: $bold;
                 font-size: 3.2rem;
-                line-height: 110%;
+                line-height: 3.2rem;
                 color: white;
                 opacity: 1;
                 // margin
@@ -60,7 +60,7 @@ b{
             .aboutme-icon-wrapper{
                 img{
                     // size
-                    width: 2 * $mainFontSize;
+                    width: 1.7 * $mainFontSize;
 
                     // margin
                     margin-right: toRem(10);

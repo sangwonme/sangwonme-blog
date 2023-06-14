@@ -14,6 +14,7 @@ const AboutMe = () => {
                     <p className='aboutme-description'>
                         Hi. I’m Sangwon Park. 
                         I'm really interested in the intersection of <b>HCI(Human-Computer Interaction)</b> and <b>AI(Artificial Intelligence)</b>. 
+                        <br />
                         I design and build systems that help make our lives healthier and more connected. 
                     </p>
                     <div className='aboutme-icon-wrapper'>
