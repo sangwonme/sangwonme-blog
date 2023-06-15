@@ -5,7 +5,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Footer from '../components/_Common/Footer'
 
 const PublicationPage = ({data}:any) => {
-  console.log(data)
+  const publicationData = data.allMarkdownRemark.nodes;
+  console.log(publicationData)
   return (
     <>
       <Header></Header>
@@ -17,15 +18,19 @@ const PublicationPage = ({data}:any) => {
 
 export const query = graphql`
 query MyQuery {
-  markdownRemark(fileAbsolutePath: {regex: "/publication/"}) {
-    frontmatter{
-      title
-      authors
-      venue
-      video
-      pdf
-      slide
-      bibtex
+  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/publication/"}}) {
+    nodes {
+      frontmatter {
+        authors
+        bibtex
+        award
+        venue
+        video
+        slide
+        title
+        pdf
+        category
+      }
     }
   }
 }
