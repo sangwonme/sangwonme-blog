@@ -19,8 +19,13 @@ export const query = graphql`
 query MyQuery {
   markdownRemark(fileAbsolutePath: {regex: "/publication/"}) {
     frontmatter{
-      date
       title
+      authors
+      venue
+      video
+      pdf
+      slide
+      bibtex
     }
   }
 }
