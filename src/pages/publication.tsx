@@ -17,13 +17,10 @@ const PublicationPage = ({data}:any) => {
 
 export const query = graphql`
 query MyQuery {
-  allMarkdownRemark {
-    totalCount
-    nodes {
-      frontmatter {
-        date
-        title
-      }
+  markdownRemark(fileAbsolutePath: {regex: "/publication/"}) {
+    frontmatter{
+      date
+      title
     }
   }
 }

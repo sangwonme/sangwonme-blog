@@ -31,6 +31,20 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/_content/publication`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `archive`,
+        path: `${__dirname}/src/_content/archive`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `diary`,
+        path: `${__dirname}/src/_content/diary`,
+      },
+    },
     `gatsby-transformer-remark`,
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
