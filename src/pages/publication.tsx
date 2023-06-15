@@ -1,9 +1,11 @@
 import * as React from 'react'
-import Header from '../components/Layout/Header'
+import { graphql } from 'gatsby'
+import Header from '../components/_Common/Header'
 import { StaticImage } from 'gatsby-plugin-image'
-import Footer from '../components/Layout/Footer'
+import Footer from '../components/_Common/Footer'
 
-const PublicationPage = () => {
+const PublicationPage = ({data}:any) => {
+  console.log(data)
   return (
     <>
       <Header></Header>
@@ -12,6 +14,20 @@ const PublicationPage = () => {
     </>
   )
 }
+
+export const query = graphql`
+query MyQuery {
+  allMarkdownRemark {
+    totalCount
+    nodes {
+      frontmatter {
+        date
+        title
+      }
+    }
+  }
+}
+`
 
 export const Head = () => <title>Home Page</title>
 

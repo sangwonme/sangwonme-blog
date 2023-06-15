@@ -1,8 +1,8 @@
 import * as React from 'react'
-import Header from '../components/Layout/Header'
-import Footer from '../components/Layout/Footer'
+import Header from '../components/_Common/Header'
+import Footer from '../components/_Common/Footer'
 import AboutMe from '../components/HomePageRelated/AboutMe'
-import DividerTitle from '../components/Common/DividerTitle'
+import DividerTitle from '../components/_Common/DividerTitle'
 
 const IndexPage = () => {
   return (
