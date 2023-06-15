@@ -32,6 +32,7 @@ b{
         .aboutme-text{
             // size
             width: 55%;
+            max-height: 100%;
 
             .aboutme-name{
                 // font
@@ -83,7 +84,7 @@ b{
 
         .aboutme-figure{
             // size
-            width: 45%;
+            height: 100%;
 
             // flex -> align video to right
             display: flex;

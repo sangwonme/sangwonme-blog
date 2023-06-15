@@ -6,12 +6,6 @@
 }
 
 .head-container{
-    // Link
-    a{
-        color: $mainColor;
-        text-decoration: none;
-    }
-
     // size : total 70% * 5%
     width: $deskW;
     height: $headH;
@@ -38,7 +32,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        
         p{
             // margin
             margin-left: 2rem;
