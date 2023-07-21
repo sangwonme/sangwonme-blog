@@ -4,14 +4,17 @@
     // flex
     display: flex;
     align-items: center;
-    justify-content: start;
 
     .papercard-icon-icon{
         // size
-        width: 1rem;
-        height: 1rem;
+        width: $mainFontSize;
+        height: $mainFontSize;
 
         .fa-icon{
+            // size
+            width: 100%;
+            height: 100%;
+
             // color
             fill: $mainColor;
         }
@@ -19,8 +22,13 @@
 
     .papercard-icon-desc{
         // size
+        height: 100%;
         margin: 0;
-        margin-left: 0.5rem;
+        margin-left: 0.2 * $mainFontSize;
+        margin-right: $mainFontSize;
+
+        // fontsize
+        font-size: $smallFontSize;
 
         // color
         color: $mainColor;

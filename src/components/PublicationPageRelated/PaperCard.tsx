@@ -44,18 +44,23 @@ const PaperCard = ({
 
   return (<>
     <div className='papercard-container'>
-      <div className='papercard-thumbnail'></div>
+      <div className='papercard-thumbnail'>
+
+      </div>
       <div className='papercard-info'>
         <div className='papercard-icons'>
           <PaperCardIcon icon={itemToIcon['award']} item='award' data={award}/>
+          <PaperCardIcon icon={itemToIcon['pdf']} item='pdf' data={pdf}/>
+          <PaperCardIcon icon={itemToIcon['bibtex']} item='bibtex' data={bibtex}/>
           <PaperCardIcon icon={itemToIcon['video']} item='video' data={video}/>
+          <PaperCardIcon icon={itemToIcon['slide']} item='slide' data={slide}/>
         </div>
         <p className='papercard-title'>{title}</p>
-        {
-          authors.map((author, i)=>(
-            <p className='papercard-authors' key={i}>{author}</p>
-          ))
-        }
+        <p className='papercard-authors'>
+          {
+            authors.join("ㅤ")
+          }
+        </p>
         <p className='papercard-venue'>{venue}</p>
       </div>
     </div>

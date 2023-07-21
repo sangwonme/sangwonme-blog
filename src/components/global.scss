@@ -9,6 +9,7 @@ $yelloColor: #FFF500;
 
 // font
 $mainFontSize: 1rem;
+$smallFontSize: 0.8rem;
 $light: 'GmarketSansLight';
 $medium: 'GmarketSansMedium';
 $bold: 'GmarketSansBold';
@@ -102,4 +103,10 @@ main{
     // size
     width: $deskW;
     margin: 0 auto;
+}
+
+.global-blank{
+    // margin
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }

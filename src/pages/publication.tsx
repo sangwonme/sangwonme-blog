@@ -5,10 +5,10 @@ import Header from '../components/_Common/Header'
 import { StaticImage } from 'gatsby-plugin-image'
 import Footer from '../components/_Common/Footer'
 import PaperCard from '../components/PublicationPageRelated/PaperCard'
+import DividerTitle from '../components/_Common/DividerTitle'
 
 const PublicationPage = ({data}:any) => {
   const publicationData = data.allMarkdownRemark.nodes;
-  console.log(publicationData[0]['frontmatter'])
   // TODO : ADD sort by date
 
 
@@ -16,8 +16,10 @@ const PublicationPage = ({data}:any) => {
     <>
       <Header></Header>
       <main>
+        <div className='global-blank'>
+          <DividerTitle>2023</DividerTitle>
+        </div>
         <div className='global-container'>
-          <SectionTitle>Publication</SectionTitle>
           <PaperCard
             authors={publicationData[0]['frontmatter']['authors']}
             bibtex={publicationData[0]['frontmatter']['bibtex']}
