@@ -1,6 +1,9 @@
 @import '../global.scss';
 
 .papercard-icon-wrapper{
+    // cursor
+    cursor: pointer;
+
     // flex
     display: flex;
     align-items: center;

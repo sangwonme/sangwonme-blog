@@ -106,7 +106,9 @@ main{
 }
 
 .global-blank{
+    // position
+    position: relative;
     // margin
-    margin-top: 3rem;
+    padding-top: 3rem;
     margin-bottom: 3rem;
 }
