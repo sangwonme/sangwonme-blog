@@ -1,0 +1,28 @@
+@import '../global.scss';
+
+.papercard-icon-wrapper{
+    // flex
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    .papercard-icon-icon{
+        // size
+        width: 1rem;
+        height: 1rem;
+
+        .fa-icon{
+            // color
+            fill: $mainColor;
+        }
+    }
+
+    .papercard-icon-desc{
+        // size
+        margin: 0;
+        margin-left: 0.5rem;
+
+        // color
+        color: $mainColor;
+    }
+}
