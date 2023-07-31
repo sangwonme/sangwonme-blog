@@ -20,7 +20,7 @@ const PaperCardIcon: React.FC<PaperCardIconProps> = ({ icon: IconComponent, item
 
     // copy Bibtex
     const copyBibtex: React.MouseEventHandler<HTMLDivElement> = (event) => {
-
+        console.log('bibTex Clicked!')
         // Copy the data to the clipboard
         navigator.clipboard.writeText(data)
             .then(() => {

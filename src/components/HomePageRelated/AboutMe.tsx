@@ -12,7 +12,7 @@ const AboutMe = () => {
                 <div className='aboutme-text'>
                     <pre className='aboutme-name'>SANGWON<br/>PARK</pre>
                     <p className='aboutme-description'>
-                        I am a Ph.D. student at the <a href="https://hcs.snu.ac.kr/" target='_blank' className='underline-animation'>
+                        I am a M.S. student at the <a href="https://hcs.snu.ac.kr/" target='_blank' className='underline-animation'>
                             <b>Human-Centered Computer Systems Lab</b>
                         </a> at Seoul National University advised by Prof. Youngki Lee.
                         I'm really interested in the intersection of <b>HCI</b> (Human-Computer Interaction) and <b>AI</b> (Artificial Intelligence). 
