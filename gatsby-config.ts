@@ -3,9 +3,9 @@ import type { GatsbyConfig } from "gatsby"
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `sangwonme-io`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://sangwonme.github.io/sangwonme-blog/`,
   },
-  pathPrefix: "https://sangwonme.github.io/sangwonme-blog/",
+  pathPrefix: "/sangwonme-blog",
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
@@ -49,6 +49,7 @@ const config: GatsbyConfig = {
     `gatsby-transformer-remark`,
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-netlify"
   ]
 }
 
