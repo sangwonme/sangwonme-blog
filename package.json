@@ -10,11 +10,11 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "git checkout deploy && gatsby build && gh-pages -d public -b deploy"
+    "deploy": "git checkout deploy && gatsby build --prefix-paths && gh-pages -d public -b deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -24,6 +24,7 @@
     "gatsby": "^5.8.1",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-netlify": "^5.1.0",
+    "gatsby-plugin-relative-paths": "^1.0.1",
     "gatsby-plugin-sass": "^6.8.0",
     "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-source-filesystem": "^5.10.0",

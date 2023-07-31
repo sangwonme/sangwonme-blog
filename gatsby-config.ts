@@ -5,11 +5,11 @@ const config: GatsbyConfig = {
     title: `sangwonme-io`,
     siteUrl: `https://sangwonme.github.io/sangwonme-blog/`,
   },
-  pathPrefix: "/sangwonme-blog",
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
+  pathPrefix: `public`,
   plugins: [
     {
       resolve: 'gatsby-plugin-sass',
@@ -49,7 +49,6 @@ const config: GatsbyConfig = {
     `gatsby-transformer-remark`,
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-plugin-netlify"
   ]
 }
 
