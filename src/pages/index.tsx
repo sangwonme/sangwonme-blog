@@ -5,6 +5,8 @@ import AboutMe from '../components/HomePageRelated/AboutMe'
 import DividerTitle from '../components/_Common/DividerTitle'
 
 const IndexPage = () => {
+  console.log('Hi this is sangwonme.')
+
   return (
     <>
       <Header></Header>
