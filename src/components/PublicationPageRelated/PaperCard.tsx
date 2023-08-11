@@ -53,9 +53,9 @@ const PaperCard = ({
 
   return (<>
     <div className='papercard-container'>
-      <div className='papercard-thumbnail'>
 
-      </div>
+      <img className='papercard-thumbnail' src='https://i.ytimg.com/vi/Eln3-DpU0pA/maxresdefault.jpg'/>
+
       <div className='papercard-info'>
         <div className='papercard-icons'>
           <PaperCardIcon setShowPopup={setShowPopupProp} icon={itemToIcon['award']} item='award' data={award}/>
@@ -73,6 +73,8 @@ const PaperCard = ({
         <p className='papercard-venue'>{venue}</p>
       </div>
     </div>
+
+    {/* copied pop-up */}
     {
       showPopup &&
       <div className='absolute-screen'>

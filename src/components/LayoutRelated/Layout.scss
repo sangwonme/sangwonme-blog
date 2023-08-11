@@ -1,0 +1,53 @@
+@import "../global.scss";
+
+main{
+  // size
+  width: 100%;
+
+  // position
+  position: absolute;
+  top: $headH;
+
+  &::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $headH;
+    background: inherit;
+    z-index: 1;
+    // background: linear-gradient(to bottom, rgb(255, 255, 255), transparent); // Add a whity gradient
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  article{
+    //size
+    min-height: 89vh;
+
+    .layout-title{
+      padding-top: $bigFontSize;
+      padding-bottom: $mainFontSize;
+      margin: 0;
+
+      // center
+      width: 100%;
+      text-align: center;
+     
+      // font
+      font-size: $bigFontSize;
+      font-family: 'GmarketSansBold';
+    }
+  
+    .layout-content{
+      // size
+      width: $deskW;
+      
+      // center
+      margin: 0 auto;
+    }
+  }
+
+
+}
