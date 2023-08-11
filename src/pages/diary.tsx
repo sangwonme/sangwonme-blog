@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import Header from '../components/_Common/Header'
+import Header from '../components/LayoutRelated/Header'
 import { StaticImage } from 'gatsby-plugin-image'
-import Footer from '../components/_Common/Footer'
+import Footer from '../components/LayoutRelated/Footer'
 
 const DiaryPage = ({data}:any) => {
   console.log(data)

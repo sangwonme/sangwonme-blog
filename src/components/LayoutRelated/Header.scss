@@ -1,0 +1,62 @@
+@import "../global.scss";
+
+.head-container{
+    // size
+    width: 100%;
+    height: $headH;
+
+    // border
+    border-bottom: 1px solid $whiteBlue;
+
+    // position
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    // background
+    background-color: rgba(255, 255, 255, 0.226);
+    z-index: 2;
+
+    // center
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .head-nav-wrapper{
+        // size
+        width: $deskW;
+    
+        // flex
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        // background
+    
+        p{
+            // remove margin
+            margin: 0;
+    
+            // font
+            font-size: $mainFontSize;
+            color: $mainColor;
+    
+            // bold when hover w/o moving
+            &:hover{
+                text-shadow: 0 0.015em #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
+            }
+        }
+    
+        .head-nav{
+            // flex
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            p{
+                // margin
+                margin-left: 2rem;
+            }
+        }
+    }
+}
