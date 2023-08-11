@@ -17,19 +17,17 @@ const PublicationPage = ({data}:any) => {
     <>
       <Layout title='Publications'>
         <DividerTitle>2023</DividerTitle>
-        <div className='global-container'>
-          <PaperCard
-            authors={publicationData[0]['frontmatter']['authors']}
-            bibtex={publicationData[0]['frontmatter']['bibtex']}
-            award={publicationData[0]['frontmatter']['award']}
-            venue={publicationData[0]['frontmatter']['venue']}
-            video={publicationData[0]['frontmatter']['video']}
-            slide={publicationData[0]['frontmatter']['slide']}
-            title={publicationData[0]['frontmatter']['title']}
-            pdf={publicationData[0]['frontmatter']['pdf']}
-            category={publicationData[0]['frontmatter']['category']}
-          />
-        </div>
+        <PaperCard
+          authors={publicationData[0]['frontmatter']['authors']}
+          bibtex={publicationData[0]['frontmatter']['bibtex']}
+          award={publicationData[0]['frontmatter']['award']}
+          venue={publicationData[0]['frontmatter']['venue']}
+          video={publicationData[0]['frontmatter']['video']}
+          slide={publicationData[0]['frontmatter']['slide']}
+          title={publicationData[0]['frontmatter']['title']}
+          pdf={publicationData[0]['frontmatter']['pdf']}
+          category={publicationData[0]['frontmatter']['category']}
+        />
       </Layout>
     </>
   )
