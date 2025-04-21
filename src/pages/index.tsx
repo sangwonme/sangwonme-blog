@@ -5,7 +5,6 @@ import SubSectionTitle from '../components/_Common/SubSectionTitle'
 
 import './index.scss';
 
-// You can make a simple component for each project card later if needed
 const IndexPage = ({ data }: any) => {
   const ongoingProjects = data.allMarkdownRemark.nodes;
 
@@ -13,7 +12,24 @@ const IndexPage = ({ data }: any) => {
     <>
       <Layout title={''}>
         <SubSectionTitle>Research Interest</SubSectionTitle>
+        <div className="research-interest-container">
+          <div className="research-interest-image-container">
+            <img 
+              src="https://github.com/sangwonme/imgurltest/blob/main/child.png?raw=true" 
+              alt="Child learning illustration"
+              className="research-interest-image"
+            />
+          </div>
 
+    
+          <p className="research-interest-paragraph">
+            <b>Human-AI Interaction:</b> I'm passionate about exploring how the latest AI technologies can be meaningfully integrated into human-computer interaction, especially in mobile systems.
+          </p>
+
+          <p className="research-interest-paragraph">
+            <b>AI-Powered Support for Early Learning:</b> I'm interested in how AI can support children's early learning experiences — from independent exploration to parent-child interactions at home. I also have four years of experience teaching programming to children, which deeply inspires my work.
+          </p>
+        </div>
 
         <SubSectionTitle>On-Going Research</SubSectionTitle>
         <div className="ongoing-container">
@@ -43,10 +59,6 @@ const IndexPage = ({ data }: any) => {
             <span className="education-text">B.S. Electrical Computer Engineering, Seoul National University</span>
           </div>
         </div>
-
-
-
-
       </Layout>
     </>
   )

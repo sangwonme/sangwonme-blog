@@ -1,4 +1,28 @@
 @import '../components/global.scss';
+.research-interest-container {
+  margin-bottom: 2rem;
+
+  .research-interest-paragraph {
+    font-size: $smallFontSize;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .research-interest-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+
+    .research-interest-image {
+      max-width: 15rem;
+      width: 80%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
 
 .ongoing-container {
   width: 100%;
