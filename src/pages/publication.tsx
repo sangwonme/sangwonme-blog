@@ -1,12 +1,8 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import SectionTitle from '../components/_Common/SectionTitle'
-import Header from '../components/LayoutRelated/Header'
-import { StaticImage } from 'gatsby-plugin-image'
-import Footer from '../components/LayoutRelated/Footer'
 import PaperCard from '../components/PublicationPageRelated/PaperCard'
-import DividerTitle from '../components/_Common/DividerTitle'
 import Layout from '../components/LayoutRelated/Layout'
+import SubSectionTitle from '../components/_Common/SubSectionTitle'
 
 const PublicationPage = ({data}:any) => {
   const publicationData = data.allMarkdownRemark.nodes;
@@ -16,7 +12,7 @@ const PublicationPage = ({data}:any) => {
   return (
     <>
       <Layout title='Publications'>
-        <DividerTitle>2023</DividerTitle>
+        <SubSectionTitle>2023</SubSectionTitle>
         <PaperCard
           authors={publicationData[0]['frontmatter']['authors']}
           bibtex={publicationData[0]['frontmatter']['bibtex']}
