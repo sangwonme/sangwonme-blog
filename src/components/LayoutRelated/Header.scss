@@ -33,20 +33,33 @@
     
         // background
     
-        p{
-            // remove margin
+        p {
             margin: 0;
-    
-            // font
             font-size: $mainFontSize;
             color: $mainColor;
-    
-            // bold when hover w/o moving
-            &:hover{
-                text-shadow: 0 0.015em #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
+            padding: 0.2rem 0.5rem;
+            position: relative;
+            overflow: hidden;
+          
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%); // Center vertically
+              width: 0%; // Start hidden
+              height: 50%; // Highlight height: 50% of text height (adjust as needed)
+              background-color: $yellowColor;
+              z-index: -1; // Stay behind the text
+              transition: width 0.2s ease;
             }
-        }
-    
+          
+            &:hover::before {
+              width: 100%;
+            }
+          }
+          
+          
         .head-nav{
             // flex
             display: flex;
