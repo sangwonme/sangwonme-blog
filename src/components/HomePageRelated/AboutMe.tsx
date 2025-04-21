@@ -31,10 +31,15 @@ const AboutMe = () => {
                         <source src={blueprintSW} type="video/webm"/>
                     </video>
                 </div>
-                <p className='aboutme-description'>
+                {/* <p className='aboutme-description'>
                     Hi, I’m Sangwon Park, an HCI researcher and MS/PhD student at the  <a href="https://hcs.snu.ac.kr/" target='_blank' className='underline-animation'>
                         <b>Human-Centered Computer Systems Lab</b>
                     </a> at Seoul National University. 
+                    I’m passionate about designing AI-powered systems that support adaptive scaffolding for early learning. 
+                    If you're interested in similar topics or just want to chat, feel free to reach out!
+                </p> */}
+                <p className='aboutme-description'>
+                    Hi, I’m Sangwon Park, an HCI researcher and MS/PhD student at the Human-Centered Computer Systems Lab at Seoul National University. 
                     I’m passionate about designing AI-powered systems that support adaptive scaffolding for early learning. 
                     If you're interested in similar topics or just want to chat, feel free to reach out!
                 </p>

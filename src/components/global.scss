@@ -45,7 +45,9 @@ $headH: 6vh;
 $footH: 5vh;
 $mainH: 100vh - ($headH + $footH);
 $deskW: 60%; // desktop width
+$mobileW: 90%; // mobile width
 $contentsW: calc($deskW * 0.8);
+$mobileContentW: calc($mobileW * 0.8);
 
 // global style
 html, body{

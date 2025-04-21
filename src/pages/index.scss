@@ -1,31 +1,31 @@
 @import '../components/global.scss';
 
-.ongoing-container{
-  // size
+.ongoing-container {
   width: 100%;
-  .ongoing-wrapper{
-    // size
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 
-    .ongoing-thumbnail{
-      // size
+  .ongoing-wrapper {
+    flex: 1 1 45%; // Two cards per row on desktop
+    display: flex;
+    flex-direction: column;
+
+    .ongoing-thumbnail {
       width: 100%;
-
+      height: auto; // maintain aspect ratio
+      object-fit: cover;
     }
-    .ongoing-title{
-      // margin
+
+    .ongoing-title {
       margin: 0.5rem 0;
       margin-top: 2rem;
-      
-      // font
       font-size: $smallFontSize;
       font-family: $bold;
     }
-    .ongoing-description{
-      // margin
+
+    .ongoing-description {
       margin: 0.3rem 0;
-      
-      // font
       font-size: $smallFontSize;
       text-align: justify;
     }
@@ -40,7 +40,7 @@
 
   .education-item {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; // stack date and text vertically for small screens
     font-size: $smallFontSize;
 
     .education-date {
@@ -48,7 +48,24 @@
     }
 
     .education-text {
-      margin-left: 0.5rem;
+      margin-left: 0;
+      margin-top: 0.2rem;
     }
+  }
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+  .ongoing-container {
+    flex-direction: column; // stack projects vertically
+  }
+
+  .ongoing-wrapper {
+    flex: 1 1 100%; // full width
+  }
+
+  .education-item {
+    flex-direction: column; // stack date and text vertically
+    align-items: flex-start;
   }
 }

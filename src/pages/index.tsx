@@ -31,15 +31,15 @@ const IndexPage = ({ data }: any) => {
         <SubSectionTitle>Education</SubSectionTitle>
         <div className="education-container">
           <div className="education-item">
-            <span className="education-date">2023.SEP -</span>
+            <span className="education-date">2023 SEP - NOW</span>
             <span className="education-text">M.S./Ph.D. Computer Science and Engineering, Seoul National University</span>
           </div>
           <div className="education-item">
-            <span className="education-date">2020.MAR - 2023.FEB</span>
+            <span className="education-date">2020 MAR - 2023 FEB</span>
             <span className="education-text">B.A. Information Science & Culture, Seoul National University</span>
           </div>
           <div className="education-item">
-            <span className="education-date">2017.MAR - 2023.FEB</span>
+            <span className="education-date">2017 MAR - 2023 FEB</span>
             <span className="education-text">B.S. Electrical Computer Engineering, Seoul National University</span>
           </div>
         </div>
