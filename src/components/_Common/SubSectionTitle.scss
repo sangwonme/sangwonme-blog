@@ -1,0 +1,27 @@
+@import '../global.scss';
+
+
+.subsection-container{
+  
+  // margin
+  margin-top: 1rem;
+
+  // flex
+  display: flex;
+  align-items: center;
+
+  
+
+  .subsection-square{
+    height: $bigFontSize;
+    width: 0.2 * $bigFontSize;
+    background-color: $yellowColor;
+  }
+  
+  .subsection-title{
+    font-size: $bigFontSize;
+    font-family: $bold;
+    margin: 0;
+    margin-left: 0.5rem;
+  }
+}

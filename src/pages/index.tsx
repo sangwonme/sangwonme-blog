@@ -1,14 +1,14 @@
 import * as React from 'react'
-import DividerTitle from '../components/_Common/DividerTitle'
 import Layout from '../components/LayoutRelated/Layout'
+import SubSectionTitle from '../components/_Common/SubSectionTitle'
 
 const IndexPage = () => {
 
   return (
     <>
       <Layout title={''}>
-        <DividerTitle>Publications</DividerTitle>
-        <DividerTitle>Education</DividerTitle>
+        <SubSectionTitle>On-Going Research</SubSectionTitle>
+        <SubSectionTitle>Education</SubSectionTitle>
       </Layout>
     </>
   )
