@@ -1,7 +1,7 @@
 @use "sass:math";
 
 // color
-$mainColor: #2341AD;
+$mainColor: #001355;
 $darkColor: #09238339;
 $whiteBlue: #A7B3DD;
 $yelloColor: #FFF500;
@@ -43,9 +43,8 @@ $headDummyH: 2%;
 $headH: 6vh;
 $footH: 5vh;
 $mainH: 100vh - ($headH + $footH);
-$deskW: 75%; // desktop width
-
-
+$deskW: 60%; // desktop width
+$contentsW: calc($deskW * 0.8);
 
 // global style
 html, body{
@@ -88,9 +87,6 @@ a{
     &:hover::after{
         transform: scaleX(1);
         transform-origin: bottom left;
-    }
-    &:hover{
-        // text-shadow: 0 0.015em white,0 -0.015em white,0.01em 0 white,-0.01em 0 white;
     }
 }
 

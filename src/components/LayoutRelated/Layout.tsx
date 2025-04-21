@@ -17,8 +17,8 @@ const Layout: React.FC<LayoutProps> = ({ title, children }) => {
       <Header/>
       <main>
         <article>
-          {title ? <h1 className='layout-title'>{title.toUpperCase()}</h1> : <AboutMe/>}
-          <div className='layout-content'>
+          {title ? <h1 className='page-title'>{title.toUpperCase()}</h1> : <AboutMe/>}
+          <div className='page-content'>
             {children}
           </div>
         </article>

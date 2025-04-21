@@ -26,7 +26,7 @@ main{
     //size
     min-height: 89vh;
 
-    .layout-title{
+    .page-title{
       padding-top: $bigFontSize;
       padding-bottom: $mainFontSize;
       margin: 0;
@@ -40,7 +40,7 @@ main{
       font-family: 'GmarketSansBold';
     }
   
-    .layout-content{
+    .page-content{
       // size
       width: $deskW;
       
