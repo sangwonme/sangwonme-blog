@@ -54,6 +54,7 @@ const PaperCard = ({
   return (<>
     <div className='papercard-container'>
 
+      
       <img className='papercard-thumbnail' src='https://i.ytimg.com/vi/Eln3-DpU0pA/maxresdefault.jpg'/>
 
       <div className='papercard-info'>

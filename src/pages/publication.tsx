@@ -4,30 +4,51 @@ import PaperCard from '../components/PublicationPageRelated/PaperCard'
 import Layout from '../components/LayoutRelated/Layout'
 import SubSectionTitle from '../components/_Common/SubSectionTitle'
 
-const PublicationPage = ({data}:any) => {
+const PublicationPage = ({ data }: any) => {
   const publicationData = data.allMarkdownRemark.nodes;
-  // TODO : ADD sort by date
 
+  // 1. Sort publications by date (newest first)
+  const sortedPublications = [...publicationData].sort((a, b) => {
+    return new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime();
+  });
+
+  // 2. Group publications by year
+  const publicationsByYear: { [year: string]: any[] } = {};
+
+  sortedPublications.forEach((pub) => {
+    const year = new Date(pub.frontmatter.date).getFullYear();
+    if (!publicationsByYear[year]) {
+      publicationsByYear[year] = [];
+    }
+    publicationsByYear[year].push(pub);
+  });
 
   return (
     <>
       <Layout title='Publications'>
-        <SubSectionTitle>2023</SubSectionTitle>
-        <PaperCard
-          authors={publicationData[0]['frontmatter']['authors']}
-          bibtex={publicationData[0]['frontmatter']['bibtex']}
-          award={publicationData[0]['frontmatter']['award']}
-          venue={publicationData[0]['frontmatter']['venue']}
-          video={publicationData[0]['frontmatter']['video']}
-          slide={publicationData[0]['frontmatter']['slide']}
-          title={publicationData[0]['frontmatter']['title']}
-          pdf={publicationData[0]['frontmatter']['pdf']}
-          category={publicationData[0]['frontmatter']['category']}
-        />
+        {Object.keys(publicationsByYear).sort((a, b) => Number(b) - Number(a)).map((year) => (
+          <div key={year}>
+            <SubSectionTitle>{year}</SubSectionTitle>
+            {publicationsByYear[year].map((pub, idx) => (
+              <PaperCard
+                key={idx}
+                authors={pub.frontmatter.authors}
+                bibtex={pub.frontmatter.bibtex}
+                award={pub.frontmatter.award}
+                venue={pub.frontmatter.venue}
+                video={pub.frontmatter.video}
+                slide={pub.frontmatter.slide}
+                title={pub.frontmatter.title}
+                pdf={pub.frontmatter.pdf}
+                category={pub.frontmatter.category}
+              />
+            ))}
+          </div>
+        ))}
       </Layout>
     </>
-  )
-}
+  );
+};
 
 export const query = graphql`
 query MyQuery {
@@ -49,6 +70,7 @@ query MyQuery {
   }
 }
 `
-export const Head = () => <title>Home Page</title>
 
-export default PublicationPage
+export const Head = () => <title>Publications</title>
+
+export default PublicationPage;

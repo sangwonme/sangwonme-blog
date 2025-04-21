@@ -35,15 +35,15 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `archive`,
-        path: `${__dirname}/src/_content/archive`,
+        name: `project`,
+        path: `${__dirname}/src/_content/project`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `diary`,
-        path: `${__dirname}/src/_content/diary`,
+        name: `artwork`,
+        path: `${__dirname}/src/_content/artwork`,
       },
     },
     `gatsby-transformer-remark`,
