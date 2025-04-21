@@ -127,14 +127,15 @@ b {
         .aboutme-wrapper {
             width: $mobileW; // ✅ change to mobile width
             padding: 0 1rem;
+            
+            .aboutme-name {
+                font-size: $bigFontSize; // make it a bit smaller on mobile
+            }
+        
+            .aboutme-description {
+                font-size: $smallFontSize;
+            }
         }
     
-        .aboutme-name {
-            font-size: $bigFontSize; // make it a bit smaller on mobile
-        }
-    
-        .aboutme-description {
-            font-size: $smallFontSize;
-        }
     }
 }
