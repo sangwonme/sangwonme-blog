@@ -21,6 +21,7 @@ const itemToIcon = {
 interface PaperCardProps{
   title: string;
   authors: [string];
+  thumbnail: string;
   venue: string;
   // icons
   award: string;
@@ -35,6 +36,7 @@ interface PaperCardProps{
 // papercard
 const PaperCard = ({
   authors,
+  thumbnail,
   bibtex,
   award,
   venue,
@@ -54,8 +56,8 @@ const PaperCard = ({
   return (<>
     <div className='papercard-container'>
 
-      
-      <img className='papercard-thumbnail' src='https://i.ytimg.com/vi/Eln3-DpU0pA/maxresdefault.jpg'/>
+
+      <img className='papercard-thumbnail' src={thumbnail}/>
 
       <div className='papercard-info'>
         <div className='papercard-icons'>

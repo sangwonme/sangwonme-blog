@@ -35,6 +35,7 @@ const PublicationPage = ({ data }: any) => {
                 authors={pub.frontmatter.authors}
                 bibtex={pub.frontmatter.bibtex}
                 award={pub.frontmatter.award}
+                thumbnail={pub.frontmatter.thumbnail}
                 venue={pub.frontmatter.venue}
                 video={pub.frontmatter.video}
                 slide={pub.frontmatter.slide}
@@ -59,6 +60,7 @@ query MyQuery {
         date
         bibtex
         award
+        thumbnail
         venue
         video
         slide
