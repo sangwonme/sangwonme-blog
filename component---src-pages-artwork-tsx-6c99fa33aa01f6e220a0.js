@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksangwonme_io=self.webpackChunksangwonme_io||[]).push([[232],{4331:function(e,t,n){n.r(t),n.d(t,{Head:function(){return a}});var l=n(7294),r=n(9503);const a=()=>l.createElement("title",null,"Artwork");t.default=()=>l.createElement(l.Fragment,null,l.createElement(r.Z,{title:"Artwork"},l.createElement(l.Fragment,null)))}}]);
+//# sourceMappingURL=component---src-pages-artwork-tsx-6c99fa33aa01f6e220a0.js.map
