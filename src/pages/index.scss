@@ -40,7 +40,8 @@
 
   .education-item {
     display: flex;
-    flex-direction: column; // stack date and text vertically for small screens
+    justify-content: space-between;
+    align-items: center;
     font-size: $smallFontSize;
 
     .education-date {
@@ -64,8 +65,12 @@
     flex: 1 1 100%; // full width
   }
 
-  .education-item {
-    flex-direction: column; // stack date and text vertically
-    align-items: flex-start;
+  .education-container{
+
+    .education-item {
+      flex-direction: column; // stack date and text vertically
+      align-items: flex-start;
+      justify-content:flex-start;
+    }
   }
 }

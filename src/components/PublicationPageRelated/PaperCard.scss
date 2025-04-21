@@ -132,3 +132,39 @@
         }
     }
 }
+
+/* ------------- */
+/* ✨ Responsive styles ✨ */
+@media (max-width: 768px) {
+    .papercard-container {
+        flex-direction: column;
+        align-items: center;
+
+        .papercard-thumbnail {
+            width: 90%;
+            height: auto;
+            aspect-ratio: 4/3; // keeps nice ratio
+            margin-bottom: 1rem;
+        }
+
+        .papercard-info {
+            margin: 0;
+            width: 90%;
+
+            .papercard-icons {
+                flex-wrap: wrap;
+            }
+
+            .papercard-title {
+                font-size: $smallFontSize;
+                margin-top: 1rem;
+            }
+
+            .papercard-authors,
+            .papercard-venue {
+                font-size: $smallFontSize;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
