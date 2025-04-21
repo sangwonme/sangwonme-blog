@@ -28,6 +28,13 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `ongoing`,
+        path: `${__dirname}/src/_content/ongoing`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `publication`,
         path: `${__dirname}/src/_content/publication`,
       },

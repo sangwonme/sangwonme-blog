@@ -25,7 +25,7 @@ const PublicationPage = ({ data }: any) => {
 
   return (
     <>
-      <Layout title='Publications'>
+      <Layout title='Publication'>
         {Object.keys(publicationsByYear).sort((a, b) => Number(b) - Number(a)).map((year) => (
           <div key={year}>
             <SubSectionTitle>{year}</SubSectionTitle>

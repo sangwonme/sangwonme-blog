@@ -1,0 +1,54 @@
+@import '../components/global.scss';
+
+.ongoing-container{
+  // size
+  width: 100%;
+  .ongoing-wrapper{
+    // size
+    width: 100%;
+
+    .ongoing-thumbnail{
+      // size
+      width: 100%;
+
+    }
+    .ongoing-title{
+      // margin
+      margin: 0.5rem 0;
+      margin-top: 2rem;
+      
+      // font
+      font-size: $smallFontSize;
+      font-family: $bold;
+    }
+    .ongoing-description{
+      // margin
+      margin: 0.3rem 0;
+      
+      // font
+      font-size: $smallFontSize;
+      text-align: justify;
+    }
+  }
+}
+
+.education-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  .education-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: $smallFontSize;
+
+    .education-date {
+      font-family: $bold;
+    }
+
+    .education-text {
+      margin-left: 0.5rem;
+    }
+  }
+}
